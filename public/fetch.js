@@ -12,8 +12,8 @@ const fetch_details = () => {
             console.log(data);
             data.map(recipe => {
                 div.innerHTML +=
-                    `<b>Dish Name : </b>${recipe.recipe.label}<br>` +
-                    `<b>Image : </b>${recipe.recipe.image}<br>` +
+                    `<img src=${recipe.recipe.image} style="margine:3px;padding:3px;item-align:center;width:100px;height:100px;"/><br>` +
+                    `<b>Dish : </b>${recipe.recipe.label}<br>` +
                     `<b>Type : </b>${recipe.recipe.healthLabels[0]}<br>` +
                     `<b>Calories : </b>${Math.floor(recipe.recipe.calories)}<br><hr>`;
                 dish.value = ``;
