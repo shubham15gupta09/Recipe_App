@@ -5,11 +5,12 @@ const div = document.getElementById("content");
 const dish = document.getElementById('dish');
 const fetch_details = () => {
     div.innerHTML = ``;
+    div.innerHTML = `Please wait while we fetch Recipe related with "${dish.value}"`;
     fetch(`https://api.edamam.com/search?q=${dish.value}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`)
         .then(res => res.json())
         .then(recipe => {
+            div.innerHTML = ``;
             const data = recipe.hits;
-            console.log(data);
             data.map(recipe => {
                 div.innerHTML +=
                     `<img src=${recipe.recipe.image} style="margine:3px;padding:3px;item-align:center;width:100px;height:100px;"/><br>` +
