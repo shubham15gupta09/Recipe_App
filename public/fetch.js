@@ -1,5 +1,5 @@
-const APP_ID = "11a6b98e";
-const APP_KEY = "37b650a4e558dc71340ea7a5e1b9d92d";
+const APP_ID = "<>";
+const APP_KEY = "<>";
 
 const div = document.getElementById("content");
 const dish = document.getElementById('dish');
