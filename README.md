@@ -12,3 +12,7 @@ This App will help you make dishes in the lockdown so you can enjoy at home
 
 ## How to use ?
 https://tastyrecipe.azurewebsites.net/
+
+## Result
+I am searching my favourite food "Manchurian"<br>
+<img src="result.png">
