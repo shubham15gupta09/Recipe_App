@@ -9,7 +9,7 @@ app
     .use(bodyParser.urlencoded({ extended: true }))
     .use(bodyParser.json({}))
     .get("/", (req, res) => {
-        res.render("home.ejs");
+        res.status(200).render("home.ejs");
     })
     .listen(PORT, () => {
         console.log(`Server started at http://localhost:${PORT}/`);
